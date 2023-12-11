@@ -42,19 +42,25 @@ class _Sign_UpState extends State<Sign_Up> {
                 width: 75,
               ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
+                    constraints: BoxConstraints(
+                        maxWidth: 223), // Sesuaikan dengan kebutuhan
                     child: Center(
-                      child: Text('Create Your\n Account',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 21,
-                              fontFamily: 'Poppins')),
+                      child: Text(
+                        'Create Your\n Account',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 21,
+                          fontFamily: 'Poppins',
+                        ),
+                      ),
                     ),
                   ),
                 ],
-              ),
+              )
             ],
           ),
           Padding(
@@ -171,39 +177,51 @@ class _Sign_UpState extends State<Sign_Up> {
                 ),
                 SizedBox(height: 49),
                 Row(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.only(left: 20),
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Sign_In()),
+                          );
+                        },
                         child: Text(
-                          'Countinue to Sign Up',
+                          "Continue to Sign Up",
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontFamily: 'Poppins',
+                            color: Color.fromRGBO(177, 177, 177, 1),
+                            fontSize: 15,
                           ),
                         ),
                       ),
-                      SizedBox(width: 85,),
-                      Container(
-                          width: 58,
-                          height: 58,
-                          decoration: ShapeDecoration(
-                            color: Color.fromARGB(255, 180, 212, 41),
-                            shape: OvalBorder(),
-                          ),
-                          child: IconButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => User_Profiling()),
-                                );
-                              },
-                              icon: Icon(
-                                Icons.keyboard_double_arrow_right_outlined,
-                              )))
-                    ],
-                  ),
+                    ),
+                    Spacer(),
+                    SizedBox(
+                      width: 85,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 56),
+                        width: 58,
+                        height: 58,
+                        decoration: ShapeDecoration(
+                          color: Color.fromARGB(255, 180, 212, 41),
+                          shape: OvalBorder(),
+                        ),
+                        child: IconButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => User_Profiling()),
+                              );
+                            },
+                            icon: Icon(
+                              Icons.keyboard_double_arrow_right_outlined,
+                            )))
+                  ],
+                ),
               ],
             ),
           ),
