@@ -45,8 +45,6 @@ class _Sign_UpState extends State<Sign_Up> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    constraints: BoxConstraints(
-                        maxWidth: 223), // Sesuaikan dengan kebutuhan
                     child: Center(
                       child: Text(
                         'Create Your\n Account',
@@ -196,10 +194,6 @@ class _Sign_UpState extends State<Sign_Up> {
                           ),
                         ),
                       ),
-                    ),
-                    Spacer(),
-                    SizedBox(
-                      width: 85,
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 56),

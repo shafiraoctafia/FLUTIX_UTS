@@ -30,7 +30,7 @@ class ConfirAccount extends StatelessWidget {
                   );
                 },
               ),
-               SizedBox(width: 125),
+               SizedBox(width: 63),
               Center(
                 child: Text('Confirm\n New Account',
                     textAlign: TextAlign.center,
@@ -95,7 +95,6 @@ class ConfirAccount extends StatelessWidget {
                   ),
                 ),
               ),
-              //  Spacer(),
               SizedBox(
                 width: 85,
               ),

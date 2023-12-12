@@ -135,10 +135,11 @@ class _Sign_InState extends State<Sign_In> {
                           ),
                         ),
                       ),
-                       Spacer(), 
-                      SizedBox(width: 85,),
+                      SizedBox(
+                        width: 52,
+                      ),
                       Container(
-                        margin: EdgeInsets.only(right: 56),
+                          margin: EdgeInsets.only(right: 56),
                           width: 58,
                           height: 58,
                           decoration: ShapeDecoration(
@@ -161,25 +162,19 @@ class _Sign_InState extends State<Sign_In> {
                   SizedBox(height: 150),
                   Center(
                     child: Container(
-                      child: 
-                      TextButton(onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => Sign_Up()),
-                                );
-                              }, child: Text("Create New Account",
+                      child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Sign_Up()),
+                            );
+                          },
+                          child: Text("Create New Account",
                               style: TextStyle(
-                          color: Color.fromRGBO(177, 177, 177, 1),
-                          fontSize: 15,))
-                      // Text(
-                      //   'Create New Account',
-                      //   style: TextStyle(
-                      //     color: Color.fromRGBO(177, 177, 177, 1),
-                      //     fontSize: 15,
-                      //     fontFamily: 'Poppins',
-                      //   ),
-                      ),
+                                color: Color.fromRGBO(177, 177, 177, 1),
+                                fontSize: 15,
+                              ))),
                     ),
                   ),
                 ],

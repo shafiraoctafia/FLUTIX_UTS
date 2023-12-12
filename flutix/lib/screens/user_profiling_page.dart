@@ -14,6 +14,7 @@ class User_Profiling extends StatelessWidget {
         children: [
           SizedBox(height: 22),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
                 width: 20,
@@ -31,9 +32,9 @@ class User_Profiling extends StatelessWidget {
                   );
                 },
               ),
-               SizedBox(width: 125),
+              SizedBox(width: 72),
               Center(
-                child: Text('Create Your\n Account',
+                child: Text('Select Your\n Favourit Genre',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
@@ -42,18 +43,15 @@ class User_Profiling extends StatelessWidget {
               )
             ],
           ),
-       
           SizedBox(height: 19),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(width: 10),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -73,7 +71,7 @@ class User_Profiling extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -99,8 +97,9 @@ class User_Profiling extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(width: 10),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -120,7 +119,7 @@ class User_Profiling extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -146,8 +145,9 @@ class User_Profiling extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(width: 10),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -167,7 +167,7 @@ class User_Profiling extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -203,11 +203,11 @@ class User_Profiling extends StatelessWidget {
               ),
               SizedBox(height: 30),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(width: 10),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -227,7 +227,7 @@ class User_Profiling extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -250,11 +250,11 @@ class User_Profiling extends StatelessWidget {
               ),
               SizedBox(height: 22),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(width: 10),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -274,7 +274,7 @@ class User_Profiling extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: 200,
+                    width: 175,
                     height: 80,
                     alignment: AlignmentDirectional.center,
                     margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
@@ -319,7 +319,6 @@ class User_Profiling extends StatelessWidget {
                   ),
                 ),
               ),
-              // Spacer(),
               Container(
                   margin: EdgeInsets.only(right: 56),
                   width: 58,
